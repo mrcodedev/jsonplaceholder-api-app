@@ -1,6 +1,8 @@
+import React from "react";
+
 const getTemplatePost = (post) => {
   return (
-    <>
+    <div>
       <div>
         <strong>UserId</strong>: {post.userId}
       </div>
@@ -13,13 +15,13 @@ const getTemplatePost = (post) => {
       <div>
         <strong>Cuerpo</strong>: {post.body}
       </div>
-    </>
+    </div>
   );
 };
 
 const getTemplateComment = (comment) => {
   return (
-    <>
+    <div>
       <div>
         <strong>PostId</strong>: {comment.postId}
       </div>
@@ -35,13 +37,13 @@ const getTemplateComment = (comment) => {
       <div>
         <strong>Cuerpo</strong>: {comment.body}
       </div>
-    </>
+    </div>
   );
 };
 
 const getTemplateAlbum = (album) => {
   return (
-    <>
+    <div>
       <div>
         <strong>PostId</strong>: {album.postId}
       </div>
@@ -51,13 +53,13 @@ const getTemplateAlbum = (album) => {
       <div>
         <strong>Título</strong>: {album.title}
       </div>
-    </>
+    </div>
   );
 };
 
 const getTemplatePhoto = (photo) => {
   return (
-    <>
+    <div>
       <div>
         <strong>AlbumId</strong>: {photo.albumId}
       </div>
@@ -73,13 +75,13 @@ const getTemplatePhoto = (photo) => {
       <div>
         <strong>ThumbnailURL</strong>: {photo.thumbnailUrl}
       </div>
-    </>
+    </div>
   );
 };
 
 const getTemplateTodo = (todo) => {
   return (
-    <>
+    <div>
       <div>
         <strong>UserId</strong>: {todo.userId}
       </div>
@@ -93,13 +95,13 @@ const getTemplateTodo = (todo) => {
         <strong>Completado</strong>:{" "}
         {todo.completed ? "Completado" : "No completado"}
       </div>
-    </>
+    </div>
   );
 };
 
 const getTemplateUser = (user) => {
   return (
-    <>
+    <div>
       <div>
         <strong>Id</strong>: {user.id}
       </div>
@@ -147,7 +149,7 @@ const getTemplateUser = (user) => {
       <div>
         <strong>Sector:</strong>: {user.company.bs}
       </div>
-    </>
+    </div>
   );
 };
 

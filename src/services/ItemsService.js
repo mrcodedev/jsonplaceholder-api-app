@@ -34,7 +34,7 @@ const getAllItems = ({ endpoint }) => {
 const getItem = ({ endpoint, id }) => {
   const selectedEndpoint = getSelectedEndpoint(endpoint);
 
-  const parseId = Number(parseInt(id));
+  const parseId = Number(parseInt(id, 10));
 
   if (isNaN(parseId)) {
     throw new Error(
